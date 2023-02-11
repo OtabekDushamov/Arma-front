@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/fill-btn.css">
+    <link rel="stylesheet" href="css/sliders.css">
     <link rel="stylesheet" href="css/main_page.css">
     <title>Arma</title>
 </head>
@@ -21,7 +21,7 @@
     <div class="wrapper">
 
         <!-- Start Banners section -->
-        <section class="full-height banner-section">
+        <section class="full-height banner-section remove-on-mobile">
             <div class="grid-container grid-col-3-1-1">
                 <div class="grid-container big-padding">
                     <div class="image-container w-0">
@@ -107,13 +107,63 @@
         </section>
         <!-- End Banners section -->
 
+        <!-- Start Mobile Banners section -->
+        <section class="full-height mobile-banner-section remove-on-pk"> 
+            <div class="mobile-banner-section__bg">
+                <img src="img/red-car.png" alt="">
+            </div>
+            <div class="mobile-banner-section__burger-btn"></div>
+            <div class="mobile-banner-section__sidebar">
+                <a href="" class="mobile-banner-section__sidebar-link">
+                    Каталог моделей
+                </a>
+                <a href="" class="mobile-banner-section__sidebar-link">
+                    Топ рейтинг авто
+                </a>
+                <a href="" class="mobile-banner-section__sidebar-link">
+                    Купить запчасти
+                </a>
+                <a href="" class="mobile-banner-section__sidebar-link">
+                    О компании
+                </a>
+                <a href="" class="mobile-banner-section__sidebar-link">
+                    Контакты
+                </a>
+            </div>
+            <div class="mobile-banner-section__header">
+                <div class="mobile-banner-section__logo">
+                    <a href="">
+                        <img src="img/arma logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-banner-section__content">
+                <div class="mobile-banner-section__title">
+                    Электрокары <br> мировых брендов
+                </div>
+                <div class="mobile-banner-section__subtitle">
+                    У нас вы можете приобрести авто<br> любой комплектации<br>
+                    с комфортным салоном<br> и по выгодным ценам
+                </div>
+                <a href="" class="mobile-banner-section__btn fill-btn">
+                    <span class="fill-btn__text">
+                        Выбрать модель
+                        &nbsp;
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <div class="fill-btn__area"></div>
+                </a>
+            </div>
+        </section>
+        <!-- End Mobile Banners section -->
+
         <!-- Start Slider section -->
-        <section class="full-height slider-section">
+        <section class="full-height slider-section remove-on-mobile">
             <div class="slider-section__header">
                 Новые модели
             </div>
             <div class="slider-section__content">
-                <div class="content__data">
+                <div id="slide-1" class="content__data active">
                     <div class="data__details">
                         <div class="data__subtitle">
                             Модель
@@ -129,10 +179,64 @@
                         </div>
                     </div>
                     <div class="data__btns">
-                        <div class="data__btn margin-right">
+                        <div class="data__btn car-slider-left margin-right">
                             <i class="fa-solid fa-angle-left"></i>
                         </div>
-                        <div class="data__btn">
+                        <div class="data__btn car-slider-right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="data__table">
+                        <div class="table__tr">
+                            <div class="table__th">
+                                Тип двигателя
+                            </div>
+                            <div class="table__td">
+                                <span class="icon-circle">
+                                    <img src="img/energy.png" alt="">
+                                </span>
+                                &nbsp;
+                                Электро
+                            </div>
+                        </div>
+                        <div class="table__tr">
+                            <div class="table__th">
+                                Разгон до 100 км / ч
+                            </div>
+                            <div class="table__td">
+                                9.2 сек
+                            </div>
+                        </div>
+                        <div class="table__tr">
+                            <div class="table__th ml">
+                                Запас хода
+                            </div>
+                            <div class="table__td ml">
+                                460 км - 600 км
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="slide-2" class="content__data">
+                    <div class="data__details">
+                        <div class="data__subtitle">
+                            Модель
+                        </div>
+                        <div class="data__title">
+                            Hong E-HS8
+                        </div>
+                        <div class="data__mini">
+                            Год выпуска 2022
+                        </div>
+                        <div class="data__mini">
+                            цена 98.000 $
+                        </div>
+                    </div>
+                    <div class="data__btns">
+                        <div class="data__btn car-slider-left margin-right">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="data__btn car-slider-right">
                             <i class="fa-solid fa-angle-right"></i>
                         </div>
                     </div>
@@ -168,20 +272,168 @@
                     </div>
                 </div>
                 <div class="content__media">
-                    <div class="media__image">
-                        <img src="img/slider-car.png" alt="">
-                    </div>
-                    <div class="media__text">
-                        <a href="">
-                            Посмотреть авто
-                            &nbsp;
-                            <i class="fa-solid fa-angle-right" style="transform: translate(0, 1px);"></i>
-                        </a>
+                    <div class="image-slider swiper-container">
+                        <div class="image-slider__wrapper swiper-wrapper">
+                    
+                            <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                                <div class="media__image">
+                                    <img src="img/slider-car.png" alt="">
+                                </div>
+                                <div class="media__text">
+                                    <a href="">
+                                        Посмотреть авто
+                                        &nbsp;
+                                        <i class="fa-solid fa-angle-right" style="transform: translate(0, 1px);"></i>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                            <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                                <div class="media__image">
+                                    <img src="img/slider-car.png" alt="">
+                                </div>
+                                <div class="media__text">
+                                    <a href="">
+                                        Посмотреть авто
+                                        &nbsp;
+                                        <i class="fa-solid fa-angle-right" style="transform: translate(0, 1px);"></i>
+                                    </a>
+                                </div>
+                            </div>
+                    
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Slider section -->
+
+        <!-- Start Mobile Slider section -->
+        <section class="mobile-slider-section remove-on-pk">
+            <div class="mobile-slider-section__header">
+                Новые модели
+            </div>
+            <div class="mobile-slider-section__content">
+                <div class="image-slider swiper-container">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                
+                        <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                            <div class="mobile-slider-section__box">
+                                <div class="mobile-slider-section__details">
+                                    <div class="mobile-slider-section__subtitle">
+                                        Модель
+                                    </div>
+                                    <div class="mobile-slider-section__title">
+                                        Hong E-HS9
+                                    </div>
+                                    <div class="mobile-slider-section__mini">
+                                        Год выпуска 2022
+                                    </div>
+                                    <div class="mobile-slider-section__mini">
+                                        цена 98.000 $
+                                    </div>
+                                </div>
+                                <div class="mobile-slider-section__image">
+                                    <img src="img/slider-car.png" alt="">
+                                </div>
+                                <div class="mobile-slider-section__table">
+                                    <div class="mobile-slider-section__tr">
+                                        <div class="mobile-slider-section__th">
+                                            Тип двигателя
+                                        </div>
+                                        <div class="mobile-slider-section__td">
+                                            <span class="icon-circle">
+                                                <img src="img/energy.png" alt="">
+                                            </span>
+                                            &nbsp;
+                                            Электро
+                                        </div>
+                                    </div>
+                                    <div class="mobile-slider-section__tr">
+                                        <div class="mobile-slider-section__th">
+                                            Разгон до 100 км / ч
+                                        </div>
+                                        <div class="mobile-slider-section__td">
+                                            9.2 сек
+                                        </div>
+                                    </div>
+                                    <div class="mobile-slider-section__tr">
+                                        <div class="mobile-slider-section__th">
+                                            Запас хода
+                                        </div>
+                                        <div class="mobile-slider-section__td">
+                                            460 км - 600 км
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                            <div class="mobile-slider-section__box">
+                                <div class="mobile-slider-section__details">
+                                    <div class="mobile-slider-section__subtitle">
+                                        Модель
+                                    </div>
+                                    <div class="mobile-slider-section__title">
+                                        Hong E-HS9
+                                    </div>
+                                    <div class="mobile-slider-section__mini">
+                                        Год выпуска 2022
+                                    </div>
+                                    <div class="mobile-slider-section__mini">
+                                        цена 98.000 $
+                                    </div>
+                                </div>
+                                <div class="mobile-slider-section__image">
+                                    <img src="img/slider-car.png" alt="">
+                                </div>
+                                <div class="mobile-slider-section__table">
+                                    <div class="mobile-slider-section__tr">
+                                        <div class="mobile-slider-section__th">
+                                            Тип двигателя
+                                        </div>
+                                        <div class="mobile-slider-section__td">
+                                            <span class="icon-circle">
+                                                <img src="img/energy.png" alt="">
+                                            </span>
+                                            &nbsp;
+                                            Электро
+                                        </div>
+                                    </div>
+                                    <div class="mobile-slider-section__tr">
+                                        <div class="mobile-slider-section__th">
+                                            Разгон до 100 км / ч
+                                        </div>
+                                        <div class="mobile-slider-section__td">
+                                            9.2 сек
+                                        </div>
+                                    </div>
+                                    <div class="mobile-slider-section__tr">
+                                        <div class="mobile-slider-section__th">
+                                            Запас хода
+                                        </div>
+                                        <div class="mobile-slider-section__td">
+                                            460 км - 600 км
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mobile-slider-section__btns">
+                    <div class="mobile-slider-section__btn car-slider-left margin-right">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="mobile-slider-section__btn car-slider-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Mobile Slider section -->
 
         <!-- Start Logo section -->
         <section class="logo-section">
@@ -196,17 +448,14 @@
                     <div class="logo__item zoom-out">
                         <img src="img/car-logos/xpeng.png" alt="">
                     </div>
+                    <div class="logo__item">
+                        <img src="img/car-logos/Mercedes.png" alt="">
+                    </div>
                     <div class="logo__item zoom-out">
                         <img src="img/car-logos/BYD.png" alt="">
                     </div>
-                    <div class="logo__item zoom-in">
-                        <img src="img/car-logos/volkswagen.png" alt="">
-                    </div>
                     <div class="logo__item zoom-out">
                         <img src="img/car-logos/Mustang.png" alt="">
-                    </div>
-                    <div class="logo__item">
-                        <img src="img/car-logos/Mercedes.png" alt="">
                     </div>
                 </div>
                 <div class="content__link">
@@ -380,13 +629,16 @@
                     <div class="delivery-data__subtitle">
                         Мы можем доставить ваш электрокар <br> в любой из городов Узбекистана
                     </div>
+                    <div class="delivery-section__media inner remove-on-pk">
+                        <img src="img/car pic.png" alt="">
+                    </div>
                     <a href="" class="delivery-data__btn">
                         Выбрать модель
                         &nbsp;
                         <i class="fa-solid fa-angle-right"></i>
                     </a>
                 </div>
-                <div class="delivery-section__media">
+                <div class="delivery-section__media remove-on-mobile">
                     <img src="img/car pic.png" alt="">
                 </div>
             </div>
@@ -501,7 +753,9 @@
     <!-- End popups -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/fcf5c091af.js" crossorigin="anonymous"></script>
+    <script src="js/sliders.js"></script>
     <script src="js/main_page.js"></script>
 </body>
 

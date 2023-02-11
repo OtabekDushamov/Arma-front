@@ -50,4 +50,26 @@ $(document).ready(function() {
         }
 
     })
+
+    $('.mobile-banner-section__burger-btn').click(function (event) {
+        $(this).toggleClass('active')
+        $('.mobile-banner-section__sidebar').toggleClass('active')
+    })
+
+    $('.mobile-banner-section__header').click(function (event) {
+        $('.mobile-banner-section__burger-btn').removeClass('active')
+        $('.mobile-banner-section__sidebar').removeClass('active')
+    })
+    
+    $('.mobile-banner-section__content').click(function (event) {
+        $('.mobile-banner-section__burger-btn').removeClass('active')
+        $('.mobile-banner-section__sidebar').removeClass('active')
+    })
+
+    $(window).bind('hashchange', function() {
+        hash_name = window.location.hash
+        $('.content__data').removeClass('active')
+        $(`${hash_name}`).addClass('active')
+    });
+    
 })

@@ -1,8 +1,8 @@
 let my_image_slider = new Swiper('.image-slider', {
     // Стрелки
     navigation: {
-        nextEl: '.my-swiper-button-next',
-        prevEl: '.my-swiper-button-prev'
+        nextEl: '.car-slider-right',
+        prevEl: '.car-slider-left'
     },
     // Навигация
     // Буллемы, мекущее положение, прогрессбар

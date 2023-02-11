@@ -1,3 +1,7 @@
+.image-slider {
+  overflow: hidden;
+}
+
 .image-slider .swiper-pagination {
   bottom: -10px;
 }
