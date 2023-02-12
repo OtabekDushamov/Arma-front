@@ -364,7 +364,7 @@ body {
   left: 0;
   z-index: 3;
   padding: 30px;
-  padding-top: 80px;
+  padding-top: 120px;
   background-color: #000;
   -webkit-transform: translate(-100%, 0);
           transform: translate(-100%, 0);
@@ -1117,6 +1117,9 @@ body {
   .banner__content {
     padding: 20px;
   }
+  .delivery-section {
+    padding: 40px 20px;
+  }
   .delivery-section__data {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1125,6 +1128,7 @@ body {
   }
   .delivery-section__content {
     border-radius: 30px;
+    padding: 0;
   }
   .delivery-data__title, .delivery-data__subtitle {
     text-align: center;
@@ -1145,5 +1149,8 @@ body {
   .review-section__input-group.double {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .delivery-section__media.inner {
+    width: 80%;
   }
 }
