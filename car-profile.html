@@ -18,7 +18,7 @@
             <div class="profile-section__main">
                 <div class="profile-section__main-side">
                     <div class="profile-section__header">
-                        <a href="" class="profile-section__back-btn">
+                        <a href="#" onclick="history.back()" class="profile-section__back-btn">
                             <i class="fa-solid fa-chevron-left"></i>
                         </a>
                     </div>
@@ -43,15 +43,12 @@
                         <div class="profile-section__main-side-detail bold">
                             Комплектация
                         </div>
-                        <a href="" class="profile-section__main-side-btn dark fill-btn">
-                            <span class="fill-btn__text">
-                                Стандарт
-                            </span>
-                            <div class="fill-btn__area"></div>
-                        </a>
-                        <div class="profile-section__main-side-detail grey">
+                        <span class="profile-section__main-side-btn active">
+                            Стандарт
+                        </span>
+                        <span class="profile-section__main-side-btn">
                             Полная комплектация
-                        </div>
+                        </span>
                     </div>
                 </div>
                 <div class="profile-section__main-body">
@@ -123,7 +120,7 @@
                 </div>
                 <div class="profile-section__footer-col">
                     <div class="profile-section__footer-row">
-                        <a href="">
+                        <a href="car-profile.html">
                             Смотреть дальше
                             <span class="circle-icon">
                                 <i class="fa-solid fa-angle-right"></i>
@@ -138,7 +135,7 @@
         <!-- Start Mobile Profile Section -->
         <section class="mobile-profile-section remove-on-pk">
             <div class="mobile-profile-section__header">
-                <a href="" class="mobile-profile-section__back-btn">
+                <a href="#" onclick="history.back()" class="mobile-profile-section__back-btn">
                     <i class="fa-solid fa-chevron-left"></i>
                 </a>
                 <div class="mobile-profile-section__brand-logo">
@@ -522,14 +519,7 @@
                             placeholder="Номер телефона">
                     </div>
                     <div class="review-section__input-group">
-                        <select id="review_time" name="time" class="review-section__select">
-                            <option value="">Во сколько с вами связатся ?</option>
-                            <option value="1">14:00</option>
-                            <option value="1">15:00</option>
-                            <option value="2">16:00</option>
-                            <option value="3">17:00</option>
-                            <option value="3">18:00</option>
-                        </select>
+                        <input type="time" id="review_time" name="time" class="review-section__input">
                     </div>
                     <div class="review-section__submit">
                         <div class="review-section__btn fill-btn dark submit-review-form">

@@ -201,7 +201,7 @@
                         </div>
                         <div class="table__tr">
                             <div class="table__th">
-                                Разгон до 100 км / ч
+                                Разгон до 100 км/ч
                             </div>
                             <div class="table__td">
                                 9.2 сек
@@ -255,7 +255,7 @@
                         </div>
                         <div class="table__tr">
                             <div class="table__th">
-                                Разгон до 100 км / ч
+                                Разгон до 100 км/ч
                             </div>
                             <div class="table__td">
                                 9.2 сек
@@ -275,7 +275,7 @@
                     <div class="image-slider swiper-container">
                         <div class="image-slider__wrapper swiper-wrapper">
                     
-                            <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                            <div data-hash="slide-1" class="image-slider__slide swiper-slide" style="display: flex; flex-direction: column; justify-content: space-between;">
                                 <div class="media__image">
                                     <img src="img/slider-car.png" alt="">
                                 </div>
@@ -288,7 +288,7 @@
                                 </div>
                             </div>
                     
-                            <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                            <div data-hash="slide-2" class="image-slider__slide swiper-slide" style="display: flex; flex-direction: column; justify-content: space-between;">
                                 <div class="media__image">
                                     <img src="img/slider-car.png" alt="">
                                 </div>
@@ -656,8 +656,7 @@
                         <input type="text" id="review_name" name="name" class="review-section__input" placeholder="Ваше имя">
                     </div>
                     <div class="review-section__input-group">
-                        <input type="text" id="review_phone_number" name="phone_number" class="review-section__input"
-                            placeholder="Номер телефона">
+                        <input type="text" id="review_phone_number" name="phone_number" class="review-section__input" placeholder="Номер телефона">
                     </div>
                     <div class="review-section__input-group double">
                         <select id="review_model_id" name="model_id" class="review-section__select">
@@ -666,14 +665,7 @@
                             <option value="2">BMW X6</option>
                             <option value="3">BMW X7</option>
                         </select>
-                        <select id="review_time" name="time" class="review-section__select">
-                            <option value="">Во сколько с вами связатся ?</option>
-                            <option value="1">14:00</option>
-                            <option value="1">15:00</option>
-                            <option value="2">16:00</option>
-                            <option value="3">17:00</option>
-                            <option value="3">18:00</option>
-                        </select>
+                        <input type="time" id="review_time" name="time" class="review-section__input">
                     </div>
                     <div class="review-section__submit">
                         <div class="review-section__btn fill-btn dark submit-review-form">

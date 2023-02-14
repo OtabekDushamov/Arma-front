@@ -508,7 +508,7 @@ body {
 }
 
 .data__btn {
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
   padding: 16px;
   width: 60px;
@@ -580,7 +580,7 @@ body {
 }
 
 .media__text {
-  margin-top: 20px;
+  margin-top: auto;
   text-align: right;
   font-size: 18px;
   color: #000;
@@ -675,7 +675,7 @@ body {
 }
 
 .mobile-slider-section__btn {
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
   padding: 16px;
   width: 60px;
@@ -1103,6 +1103,18 @@ body {
 @media (min-width: 1000px) {
   .remove-on-pk {
     display: none;
+  }
+}
+
+@media (max-width: 1493px) {
+  .table__tr {
+    font-size: 14px;
+  }
+  .table__th.ml {
+    margin-left: 30px;
+  }
+  .table__td.ml {
+    margin-left: 30px;
   }
 }
 

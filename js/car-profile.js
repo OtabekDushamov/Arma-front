@@ -43,4 +43,9 @@ $(document).ready(function() {
         }
     });
 
+    $('.profile-section__main-side-btn').click(function (event) {
+        $('.profile-section__main-side-btn').removeClass('active')
+        $(this).addClass('active')
+    })
+
 })
