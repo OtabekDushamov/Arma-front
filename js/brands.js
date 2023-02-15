@@ -1,7 +1,11 @@
 $(document).ready(function() {
+
+    $('.brands-section__header-btn').attr('href', document.referrer)
+
     $('.brands-section__dropdown').click(function (event) {
         $('.brand__item').toggleClass('show')
     })
+    
     $('.brand__item').click(function (event) {
         if ($(this).hasClass('show')) {
             // Getting id

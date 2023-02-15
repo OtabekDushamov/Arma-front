@@ -373,6 +373,7 @@ body {
 }
 
 .mobile-profile-section__equipments-btns {
+  overflow: hidden;
   padding: 20px 0px;
 }
 

@@ -1,10 +1,13 @@
 $(document).ready(function() {
+    
     $('.play-video').click(function (event) {
         $('#video-popup').addClass('open')
     })
+
     $('.popup__close').click(function (event) {
         $('#video-popup').removeClass('open')
     })
+    
     $('.popup__area').click(function (event) {
         $('#video-popup').removeClass('open')
     })

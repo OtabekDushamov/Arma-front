@@ -11,6 +11,13 @@ body {
     padding: 40px 80px 20px 80px;
 }
 .brands-section__header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.brands-section__header-btn {
+    padding: 0px 5px 0px 10px;
+}
+.brands-section__header-title {
     font-size: 28px;
     font-weight: 700;
     text-align: center;

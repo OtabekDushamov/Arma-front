@@ -257,6 +257,7 @@ body {
 .banner-title {
   font-size: 24px;
   font-weight: 700;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -272,7 +273,7 @@ body {
 }
 
 .corner-radius {
-  border-radius: 0 70px 0 70px;
+  border-radius: 0 70px 0 0;
 }
 
 .radius-top-left {

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $('.profile-section__back-btn').attr('href', document.referrer)
+    $('.mobile-profile-section__back-btn').attr('href', document.referrer)
     
     $('.submit-review-form').click(function (event) {
         

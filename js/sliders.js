@@ -229,15 +229,17 @@ let my_image_slider = new Swiper('.image-slider', {
 
 let sliderBlock = document.querySelector('.image-slider');
 
-sliderBlock.addEventListener('mouseenter', function () {
-    // my_image_slider.params.autoplay.disableOnInteraction = false;
-    // my_image_slider.params.autoplay.delay = 3000;
-    // my_image_slider.autoplay.start()
-})
-
-sliderBlock.addEventListener('mouseleave', function () {
-    // my_image_slider.autoplay.stop()
-})
+if (sliderBlock != null) {
+    sliderBlock.addEventListener('mouseenter', function () {
+        // my_image_slider.params.autoplay.disableOnInteraction = false;
+        // my_image_slider.params.autoplay.delay = 3000;
+        // my_image_slider.autoplay.start()
+    })
+    
+    sliderBlock.addEventListener('mouseleave', function () {
+        // my_image_slider.autoplay.stop()
+    })
+}
 
 
 let my_equipment_slider = new Swiper('.equipment-slider', {
@@ -471,12 +473,14 @@ let my_equipment_slider = new Swiper('.equipment-slider', {
 
 let equipment_sliderBlock = document.querySelector('.equipment-slider');
 
-equipment_sliderBlock.addEventListener('mouseenter', function () {
-    // my_image_slider.params.autoplay.disableOnInteraction = false;
-    // my_image_slider.params.autoplay.delay = 3000;
-    // my_image_slider.autoplay.start()
-})
-
-equipment_sliderBlock.addEventListener('mouseleave', function () {
-    // my_image_slider.autoplay.stop()
-})
+if (equipment_sliderBlock != null) {
+    equipment_sliderBlock.addEventListener('mouseenter', function () {
+        // my_image_slider.params.autoplay.disableOnInteraction = false;
+        // my_image_slider.params.autoplay.delay = 3000;
+        // my_image_slider.autoplay.start()
+    })
+    
+    equipment_sliderBlock.addEventListener('mouseleave', function () {
+        // my_image_slider.autoplay.stop()
+    })
+}

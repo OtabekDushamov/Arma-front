@@ -84,6 +84,17 @@ body {
 }
 
 .brands-section__header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.brands-section__header-btn {
+  padding: 0px 5px 0px 10px;
+}
+
+.brands-section__header-title {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
