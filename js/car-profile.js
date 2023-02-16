@@ -51,4 +51,20 @@ $(document).ready(function() {
         $(this).addClass('active')
     })
 
+    $('.mobile-profile-section__order-btn').click(function (event) {
+        window.scrollTo({
+        top: $('.review-section').offset().top,
+        left: 0,
+        behavior: 'smooth'
+  })
+    })
+
+    $('.profile-section__main-body-btn').click(function (event) {
+        window.scrollTo({
+        top: $('.review-section').offset().top,
+        left: 0,
+        behavior: 'smooth'
+  })
+    })
+
 })

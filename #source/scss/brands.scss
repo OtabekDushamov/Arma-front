@@ -131,3 +131,9 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media (max-width: 750px) {
+    .brand__item {
+        flex: 0 0 25%;
+    }
+}

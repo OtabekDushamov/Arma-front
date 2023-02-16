@@ -85,6 +85,16 @@ body {
 
 .profile-section {
   padding: 40px 100px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .profile-section__header {
@@ -193,6 +203,7 @@ body {
   font-size: 16px;
   color: #333;
   font-weight: 300;
+  cursor: pointer;
 }
 
 .profile-section__footer {
