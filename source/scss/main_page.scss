@@ -922,3 +922,8 @@ body {
         width: 80%;
     }
 }
+@media (max-height: 625px) {
+    .mobile-banner-section__content {
+        transform: translate(0, 0);
+    }
+}
