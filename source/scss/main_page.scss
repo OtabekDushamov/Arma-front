@@ -260,7 +260,7 @@ body {
         justify-content: center;
         align-items: center;
         color: #fff;
-        transform: translate(0, -40px);
+        transform: translate(0, -160px);
     }
 
     &__title {
@@ -289,7 +289,6 @@ body {
         font-weight: 300;
     }
 }
-
 
 .slider-section {
     padding: 100px 80px;
@@ -422,7 +421,6 @@ body {
         }
     }
 }
-
 
 .mobile-slider-section {
     padding: 100px 20px 30px;
@@ -879,64 +877,6 @@ body {
     }
     .banner__content {
         padding: 20px;
-    }
-    .content__logos .logo__item:nth-child(2) {
-        position: relative;
-        &::before, &::after {
-            content: "";
-            display: inline-block;
-            width: 1px;
-            height: 100%;
-            background-color: #333;
-            position: absolute;
-            top: 0;
-        }
-        &.zoom-in {
-            transform: scale(1);
-            &::before, &::after {
-                height: 144%;
-                top: -12%;
-            }
-        }
-        &.zoom-out {
-            &::before, &::after {
-                height: 144%;
-                top: -12%;
-            }
-        }
-        &::before {
-            left: 0;
-        }
-        &::after {
-            right: 0;
-        }
-    }
-    .content__logos .logo__item:nth-child(4) {
-        position: relative;
-        &::after {
-            content: "";
-            display: inline-block;
-            width: 1px;
-            height: 100%;
-            background-color: #333;
-            position: absolute;
-            top: 0;
-        }
-        &.zoom-in {
-            &::after {
-                height: 144%;
-                top: -12%;
-            }
-        }
-        &.zoom-out {
-            &::after {
-                height: 144%;
-                top: -12%;
-            }
-        }
-        &::after {
-            right: -25%;
-        }
     }
     .logo-section {
         padding: 110px 40px 80px;
